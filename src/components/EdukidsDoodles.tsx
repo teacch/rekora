@@ -109,15 +109,14 @@ export function EdukidsDoodles() {
   ];
 
   const positions = useMemo(() => {
-    // Mostly left positions, only one right position
     const spots = [
       { top: "0%", left: "10%" },
       { top: "0%", left: "45%" },
       { bottom: "10%", left: "0%" },
       { top: "20%", left: "1%" },
-      { top: "4%", right: "15%" }, // Only one on right side
+      { top: "4%", right: "15%" }, 
     ];
-    return spots.sort(() => 0.5 - Math.random()); // shuffle a bit
+    return spots.sort(() => 0.5 - Math.random()); 
   }, []);
 
   return (

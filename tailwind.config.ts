@@ -21,7 +21,7 @@ export default {
 		extend: {
 		fontFamily: {
   heading: ['Myfont', 'serif'],
-  body: ['kamerik', 'sans-serif'],
+  body: ['Myfont', 'sans-serif'],
 },
 
 			colors: {
@@ -33,7 +33,7 @@ export default {
 				'rekora-dark-blue': '#1D3050',
         'rekora-light-blue': '#93BDF9',
         'brand-secondary': '#9D84B7',  // New secondary purple color
-        'brand-accent': '#B61F54 ',     // New accent color
+        'brand-accent': '#FFFBFC',     // New accent color
         'brand-dark': '#2F2F2F',   
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',

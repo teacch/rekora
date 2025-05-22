@@ -1,31 +1,23 @@
-import React from 'react'
-import { Button } from "@/components/ui/button"
-import { Doodles } from "@/components/Doodles"
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Doodles } from "@/components/Doodles";
 
 const WhyWeAreDifferent = () => {
   return (
     <>
-    <section className="relative w-full py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
-             <Doodles/>
-        
+      <section className="relative w-full py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
+        <Doodles />
+
         <h2 className="text-2xl md:text-3xl font-bold text-black mb-8">
           Learn Beyond the Classroom
-
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
             <p className="text-gray-600 mb-6">
-             Rekora helps high school students learn about the brain, gives them the chance to try out real science equipment, learn from mentors, and get inspired to become future leaders in science.
-
-
-
-
-
-
-
-
-
+              Rekora helps high school students learn about the brain, gives
+              them the chance to try out real science equipment, learn from
+              mentors, and get inspired to become future leaders in science.
             </p>
             <Button className="bg-orange-500 hover:bg-orange-600 text-white">
               Get Started
@@ -137,8 +129,7 @@ const WhyWeAreDifferent = () => {
                   <path d="M7 7h.01" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Mentorship & Community
-</h3>
+              <h3 className="text-xl font-bold">Mentorship & Community</h3>
             </div>
             <p className="text-gray-600">
               On the other hand, we denounce with righteous indignation and
@@ -178,7 +169,7 @@ const WhyWeAreDifferent = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default WhyWeAreDifferent
+export default WhyWeAreDifferent;

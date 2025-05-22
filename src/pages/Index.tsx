@@ -1,14 +1,12 @@
 import Header from "../components/Header";
 import Hero from "../components/MeetFounder";
-import AboutRekora from "../components/AboutRekora";
-import WhyRekora from "../components/WhyRekora";
 import ProgramsSection from "../components/ProgramsSection";
 import EnhancedGallerySection from "../components/EnhancedGallerySection";
 import Testimonials from "../components/Testimonials";
 import ResourcesPreview from "../components/ResourcesPreview";
 import MeetFounder from "../components/MeetFounder";
 import GetInvolved from "../components/GetInvolved";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 import ImageGallery from "@/components/ImageGallery";
 import FeatureCards from "@/components/FeatureCards";
 import HeroSection from "@/components/HeroSection";
@@ -28,7 +26,7 @@ const Index = () => (
     <Library />
     <Doodles />
     <HowItWorks />
-    <MeetFounder />
+    <TrustedSection/>
     <Footer />
   </div>
 );

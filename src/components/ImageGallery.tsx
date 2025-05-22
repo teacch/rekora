@@ -11,14 +11,16 @@ import { ServiceCards } from "./ServiceCard";
 const ImageGallery = () => {
   return (
     <>
-<section className="w-full px-4 sm:px-6 md:px-8 lg:px-16 pt-12 sm:pt-16 pb-4 sm:pb-6 bg-rekora-light-blue rounded-3xl mx-auto max-w-[90%] -mt-6 relative z-20">
-           <h2 className="mb-6 text-4xl font-bold text-black sm:text-5xl font-heading">We Make Science Fun</h2>
+      <section className="w-full px-4 sm:px-6 md:px-8 lg:px-16 pt-12 sm:pt-16 pb-4 sm:pb-6 bg-rekora-light-blue rounded-3xl mx-auto max-w-[90%] -mt-6 relative z-20">
+        <h2 className="mb-6 text-4xl font-bold text-black sm:text-5xl font-heading">
+          Neuroscience & STEM
+        </h2>
+        <div className="mb-6 h-1 w-16 bg-rekora-dark-blue"></div>
 
-            <p className="mb-8 text-lg text-black">
-               We believe African students deserve more than theory, they deserve{" "}
+        <p className="mb-8 text-lg text-black">
+          We believe African students deserve more than theory, they deserve{" "}
           <br /> microscopes, mentors, and opportunities.
-            </p>
-
+        </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <div className="flex items-center gap-2">
@@ -79,7 +81,7 @@ const ImageGallery = () => {
           </div>
         </div>
       </section>
-       <ServiceCards />
+      <ServiceCards />
     </>
   );
 };

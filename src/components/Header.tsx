@@ -40,7 +40,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className="bg-rekora-dark-blue">
+      <div className="bg-rekora-dark-blue font-body">
         <header
           className={`sticky top-0 z-50 transition-all duration-300 ${
             scrolled ? "glassmorphism py-3 shadow-soft" : "bg-transparent py-5"
@@ -92,23 +92,12 @@ const Header = () => {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
                 </a>
 
-                <a
-                  href="#alumni-meetups"
-                  className="text-white hover:text-brand-pink transition-colors relative group"
-                >
-                  Get Involved
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
-                </a>
+             
               </nav>
 
               <div className="flex items-center gap-4">
                 <div className="hidden md:flex items-center gap-2">
-                  <a
-                    href="/member-directory"
-                    className="text-white hover:text-brand-pink transition-colors p-2 rounded-full hover:bg-brand-pink/5"
-                  >
-                    <User className="h-5 w-5" />
-                  </a>
+                 
                   <a
                     href="#"
                     className="text-white hover:text-brand-pink transition-colors p-2 rounded-full hover:bg-brand-pink/5"
@@ -118,18 +107,18 @@ const Header = () => {
                 </div>
 
                 <Button className="bg-white text-black shadow-md hover:shadow-lg hover:bg-brand-pink/90 hover:scale-105 transition-all rounded-xl">
-                  <a href="#register">Sign Up For a Program</a>
+                  <a href="#register">Get Involved</a>
                 </Button>
 
                 <button
-                  className="lg:hidden text-brand-dark hover:text-brand-pink transition-colors"
+                  className="lg:hidden text-white hover:text-brand-pink transition-colors"
                   onClick={toggleMobileMenu}
                   aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                 >
                   {mobileMenuOpen ? (
-                    <X className="h-6 w-6" />
+                    <X className="h-8 w-8" />
                   ) : (
-                    <Menu className="h-6 w-6" />
+                    <Menu className="h-8 w-8" />
                   )}
                 </button>
               </div>
@@ -142,47 +131,47 @@ const Header = () => {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="lg:hidden glassmorphism mt-4 rounded-2xl border-t border-white/40"
+                  className="lg:hidden glassmorphism mt-4 rounded-2xl border-t text-white"
                 >
                   <nav className="container mx-auto px-4 flex flex-col py-4">
                     <a
                       href="#"
-                      className="text-brand-dark hover:text-brand-pink transition-colors py-3 border-b border-gray-100/20"
+                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
                       onClick={toggleMobileMenu}
                     >
                       Features
                     </a>
                     <a
                       href="#program"
-                      className="text-brand-dark hover:text-brand-pink transition-colors py-3 border-b border-gray-100/20"
+                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
                       onClick={toggleMobileMenu}
                     >
                       Pricing
                     </a>
                     <a
                       href="#features"
-                      className="text-brand-dark hover:text-brand-pink transition-colors py-3 border-b border-gray-100/20"
+                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
                       onClick={toggleMobileMenu}
                     >
                       Program Details
                     </a>
                     <a
                       href="#check"
-                      className="text-brand-dark hover:text-brand-pink transition-colors py-3 border-b border-gray-100/20"
+                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
                       onClick={toggleMobileMenu}
                     >
                       Member Directory
                     </a>
                     <a
                       href="#testimonials"
-                      className="text-brand-dark hover:text-brand-pink transition-colors py-3 border-b border-gray-100/20"
+                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
                       onClick={toggleMobileMenu}
                     >
                       Testimonials
                     </a>
                     <a
                       href="#faqs"
-                      className="text-brand-dark hover:text-brand-pink transition-colors py-3 border-b border-gray-100/20"
+                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
                       onClick={toggleMobileMenu}
                     >
                       FAQs

@@ -1,26 +1,13 @@
 import { Button } from "@/components/ui/button";
-import Ruth from "../assets/olujobi.png";
+import Ruth from "../assets/oluj.png";
 
 export default function MeetFounder() {
   return (
     <div className="min-h-screen">
-      <section className="w-full px-4 md:px-8 lg:px-16 py-12 md:py-16 bg-rekora-light-blue">
+      <section className="w-full px-4 md:px-8 lg:px-16 py-12 md:py-16 bg-rekora-light-blue font-body">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden border-4 border-rekora-dark-blue relative">
-              <div className="absolute -top-6 -left-6 bg-yellow-400 h-12 w-24 transform rotate-12 z-10"></div>
-              <div className="absolute -bottom-6 -right-6 bg-yellow-400 h-12 w-24 transform rotate-12 z-10"></div>
-              <div className="h-[400px] sm:h-[500px] lg:h-[600px] relative">
-                <img
-                  src={Ruth}
-                  alt="Kids playing with toys"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div>
+          
+          <div className="order-2 lg:order-1">
             <div className="absolute top-8 right-8">
               <svg
                 className="h-12 w-12 text-yellow-400"
@@ -35,11 +22,12 @@ export default function MeetFounder() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-rekora-dark-blue mb-6 font-heading">
               Meet the Founder
             </h1>
-            <p className="text-black text-lg mb-3 ">
+            <div className="mb-6 h-1 w-16 bg-rekora-dark-blue"></div>
+
+            <p className="text-black text-lg mb-3">
               When I first discovered neuroscience at Bowdoin College, I
-              realized how limited access back home in Nigeria was.{" "}
+              realized how limited it was back in Nigeria.{" "}
               <span className="font-bold text-rekora-dark-blue text-lg mb-3 max-w-lg bg">
-                {" "}
                 Rekora exists to change that.
               </span>
             </p>
@@ -49,17 +37,17 @@ export default function MeetFounder() {
               microscopes, mentors, and opportunities for young Africans.
             </p>
             <p className="text-black text-lg mb-4">
-              Ruth is a final-year student at Bowdoin College in the U.S.,
+              I am a final-year student at Bowdoin College in the U.S.,
               studying Neuroscience and German. Born and raised in Lagos,
-              Nigeria, she’s full of energy, ideas, and a big heart for young
+              Nigeria, I am so full of energy, ideas, and a big heart for young
               people.
             </p>
 
             <p className="text-black text-lg mb-6">
-              She leads Teenation Africa, where she helps young minds dream big,
-              lead boldly, and grow with confidence. At Rekora, Ruth is all
-              about helping children feel bold, brilliant, and unstoppable. She
-              sees every child as a scientist in the making and she's here to
+              I lead Teenation Africa, where I help young minds dream big,
+              lead boldly, and grow with confidence. At Rekora, I am all
+              about helping children feel brilliant and unstoppable. I
+              see every child as a scientist in the making and I am here to
               cheer them on every step of the way.
             </p>
 
@@ -81,6 +69,20 @@ export default function MeetFounder() {
                 <path d="m12 5 7 7-7 7" />
               </svg>
             </Button>
+          </div>
+
+          <div className="order-1 lg:order-2 relative">
+            <div className="rounded-2xl overflow-hidden border-4 border-rekora-dark-blue relative">
+              <div className="absolute -top-6 -left-6 bg-yellow-400 h-12 w-24 transform rotate-12 z-10"></div>
+              <div className="absolute -bottom-6 -right-6 bg-yellow-400 h-12 w-24 transform rotate-12 z-10"></div>
+              <div className="h-[300px] sm:h-[400px] lg:h-[550px] relative">
+                <img
+                  src={Ruth}
+                  alt="Kids playing with toys"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

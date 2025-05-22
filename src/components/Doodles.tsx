@@ -2,7 +2,7 @@ export function Doodles() {
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
       <svg
-        className="absolute top-20 left-20 w-24 h-16 text-teal-600/30"
+        className="absolute top-20 left-20 w-24 h-16 text-rekora-light-blue/10"
         viewBox="0 0 100 60"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ export function Doodles() {
       </svg>
 
       <svg
-        className="absolute bottom-40 left-32 w-16 h-16 text-teal-600/30"
+        className="absolute bottom-40 left-32 w-16 h-16 text-rekora-light-blue/10"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ export function Doodles() {
       </svg>
 
       <svg
-        className="absolute top-20 right-20 w-32 h-64 text-teal-600/30"
+        className="absolute top-20 right-20 w-32 h-64 text-rekora-light-blue/10"
         viewBox="0 0 100 200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ export function Doodles() {
       </svg>
 
       <svg
-        className="absolute bottom-20 right-32 w-16 h-16 text-teal-600/30"
+        className="absolute bottom-20 right-32 w-16 h-16 text-rekora-light-blue/10"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

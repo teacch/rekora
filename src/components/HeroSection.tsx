@@ -19,14 +19,16 @@ export default function HeroSection() {
   <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
           <div className="relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6">
-              Empowering Africa's Young Scientists
-            </h1>
+        <h1 className="text-3xl leading-[1.4] md:text-4xl md:leading-[1.3] lg:text-6xl lg:leading-[1.2] font-bold font-heading text-white mb-6">
+  Empowering Africa's Young Scientists
+</h1>
 
-            <p className="text-white mb-8 max-w-lg text-lg">
+                        <div className="mb-6 h-1 w-16 bg-rekora-light-blue"></div>
+
+
+            <p className="text-white mb-8 max-w-lg text-lg font-body">
               We inspire young minds through interactive learning, creativity,
-              and exploration. Our kid-friendly environment ensures a safe space
-              where children can develop essential skills in math, science,
+              and exploration. Our kid-friendly environment ensures children can develop essential skills in math, science,
               reading, and problem-solving while having fun.
             </p>
 
@@ -35,7 +37,7 @@ export default function HeroSection() {
     
 
              <div className="flex flex-col sm:flex-row gap-4 justify-start mt-8">
-          <Button className="bg-yellow-400 hover:bg-yellow-500 text-teal-800 font-medium rounded-full px-8 py-6 text-base">
+          <Button className="bg-yellow-400 hover:bg-yellow-500 text-teal-800 font-medium rounded-full px-8 py-6 text-base font-body">
             Get Started Now
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,27 +55,30 @@ export default function HeroSection() {
               <path d="m12 5 7 7-7 7" />
             </svg>
           </Button>
+<Button
+  variant="outline"
+  className="border-white bg-inherit text-white hover:bg-white/10 font-medium rounded-full px-8 py-6 text-base font-body"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-users mr-2 h-5 w-5"
+  >
+    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+    <circle cx="8.5" cy="7" r="4" />
+    <path d="M20 8v6" />
+    <path d="M23 11h-6" />
+  </svg>
+  Partner With Us
+</Button>
 
-          <Button
-             variant="outline"
-                className="border-white bg-inherit text-white hover:bg-white/10 font-medium rounded-full px-8 py-6 text-base"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-play mr-2 h-5 w-5"
-                >
-                  <polygon points="5 3 19 12 5 21 5 3" />
-                </svg>
-               Parter With Us
-          </Button>
         </div>
 
             <div className="flex items-center gap-8 mt-12">
@@ -101,7 +106,7 @@ export default function HeroSection() {
                   <span className="text-2xl font-bold text-white">7k+</span>
                 </div>
                 <span className="text-white/70 text-sm">
-                 Bowdoin College Students
+           College Students
                 </span>
               </div>
 
@@ -126,8 +131,8 @@ export default function HeroSection() {
                   </div>
                   <span className="text-2xl font-bold text-white">20+</span>
                 </div>
-                <span className="text-white/70 text-sm">
-                  Science Programs & Courses
+                <span className="text-white/70 text-sm font-body">
+                  Free Science Courses
                 </span>
               </div>
             </div>
@@ -139,7 +144,7 @@ export default function HeroSection() {
               <img
                 src={Doc}
                 alt="Happy children with school supplies"
-                className="object-contain"
+                className="object-contain rounded-2xl"
               />
             </div>
           </div>
