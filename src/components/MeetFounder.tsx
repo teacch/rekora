@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Ruth from "../assets/oluj.png";
+import Ruth from "../assets/tru.jpg";
 
 export default function MeetFounder() {
   return (

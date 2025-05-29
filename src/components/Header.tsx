@@ -55,14 +55,14 @@ const Header = () => {
 
               <nav className="hidden lg:flex space-x-8">
                 <a
-                  href="#"
+                  href="/"
                   className="text-white hover:text-brand-pink transition-colors relative group"
                 >
                   Home{" "}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
                 </a>
                 <a
-                  href="#program"
+                  href="/"
                   className="text-white hover:text-brand-pink transition-colors relative group"
                 >
                   About Us{" "}
@@ -77,7 +77,7 @@ const Header = () => {
                 </a>
 
                 <a
-                  href="#alumni-meetups"
+                  href="/resources"
                   className="text-white hover:text-brand-pink transition-colors relative group"
                 >
                   Resources{" "}
@@ -85,7 +85,7 @@ const Header = () => {
                 </a>
 
                 <a
-                  href="#alumni-meetups"
+                  href="/resources"
                   className="text-white hover:text-brand-pink transition-colors relative group"
                 >
                   Gallery{" "}
