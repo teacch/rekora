@@ -6,6 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Resources from "./pages/Resources";
+import Header from "./components/Header";
+// import AboutUsPage from "./pages/AboutUsPage";
+// import ProgramsPage from "./pages/ProgramsPage";
+// import GalleryPage from "./pages/GalleryPage";
+// import SearchPage from "./pages/SearchPage";
 
 const queryClient = new QueryClient();
 
@@ -15,11 +20,12 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="*" element={<NotFound />} />
-                    <Route path="/resources" element={<Resources />} />
+          <Route path="/resources" element={<Resources />} />
 
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
