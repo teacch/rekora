@@ -62,7 +62,7 @@ const Header = () => {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
                 </Link>
                 <Link
-                  to="/about-us"
+                  to="/about"
                   className="text-white hover:text-brand-pink transition-colors relative group"
                 >
                   About Us{" "}
@@ -136,7 +136,7 @@ const Header = () => {
                       Home
                     </Link>
                     <Link
-                      to="/about-us"
+                      to="/about"
                       className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
                       onClick={toggleMobileMenu}
                     >
