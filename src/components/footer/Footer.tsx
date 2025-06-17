@@ -1,7 +1,7 @@
-import SocialLinks from "./SocialLinks";
+import SocialLinks from "../SocialLinks";
 import FooterNavigation from "./FooterNavigation";
 import Copyright from "./Copyright";
-import FooterImg from "../assets/rekora-logo-light.png";
+import FooterImg from "../../assets/rekora-logo-light.png";
 
 export default function Footer() {
   return (

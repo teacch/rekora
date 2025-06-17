@@ -6,7 +6,7 @@ import Testimonials from "../components/Testimonials";
 import ResourcesPreview from "../components/ResourcesPreview";
 import MeetFounder from "../components/MeetFounder";
 import GetInvolved from "../components/GetInvolved";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer/Footer";
 import ImageGallery from "@/components/ImageGallery";
 import FeatureCards from "@/components/FeatureCards";
 import HeroSection from "@/components/HeroSection";

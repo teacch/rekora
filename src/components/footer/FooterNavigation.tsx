@@ -1,4 +1,4 @@
-import { FooterColumn } from "../components/FooterColumn"
+import { FooterColumn } from "./FooterColumn"
 
 export default function FooterNavigation() {
   const navigationData = [
