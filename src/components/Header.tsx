@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import React, { useState, useEffect } from "react";
 import Logo from "../assets/rekora-logo-light.png";
 import { Menu, X, ArrowUp, Search, User } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Keep react-router-dom for other links
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,6 +39,16 @@ const Header = () => {
       behavior: "smooth",
     });
   };
+
+  // New function to handle scrolling to an element by ID
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setMobileMenuOpen(false); // Close mobile menu after clicking
+  };
+
   return (
     <>
       <div className="bg-rekora-dark-blue font-body">
@@ -68,13 +78,13 @@ const Header = () => {
                   About Us{" "}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
                 </Link>
-                <Link
-                  to="/programs"
+                <button
+                  onClick={() => scrollToSection("programs")}
                   className="text-white hover:text-brand-pink transition-colors relative group"
                 >
                   Programs{" "}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
-                </Link>
+                </button>
 
                 <Link to="/resources" className="text-white hover:text-brand-pink transition-colors relative group">
                   Resources
@@ -142,13 +152,12 @@ const Header = () => {
                     >
                       About Us
                     </Link>
-                    <Link
-                      to="/programs"
-                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
-                      onClick={toggleMobileMenu}
+                    <button
+                      onClick={() => scrollToSection("programs")}
+                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20 text-left w-full"
                     >
                       Programs
-                    </Link>
+                    </button>
                     <Link
                       to="/resources"
                       className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
