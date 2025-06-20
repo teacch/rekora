@@ -7,6 +7,7 @@ import { PlayschoolDoodles } from "./PlaySchoolDoodles";
 import StemProgram from "./StemProgram"; // Not used here but imported
 import ImageGallery from "./ImageGallery";
 import Brain from "../assets/brain.png";
+import { Instagram } from "./Instagram";
 
 const contentItems = [
   {
@@ -156,7 +157,7 @@ const Library = () => {
       </section>
 
       <div className="bg-rekora-light-blue">
-        <ImageGallery />
+       <Instagram/>
       </div>
     </>
   );

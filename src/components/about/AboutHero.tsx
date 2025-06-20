@@ -98,7 +98,7 @@ export default function AboutHero() {
 
         <div className="mt-24 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-12 font-heading">
-            Our Impact in Action
+            Our Team in Action
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer">

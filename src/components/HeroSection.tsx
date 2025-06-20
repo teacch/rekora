@@ -4,11 +4,11 @@ import { EdukidsDoodles } from "./EdukidsDoodles";
 import Branding from "../assets/rekora-branding.png";
 import Header from "./Header";
 import React, { useEffect } from "react";
-import ProgramsSection from "./ProgramsSection";
+import ProgramsSection from "./ProgramsSection"; // This component will be "overlapped"
 import StemProgram from "./StemProgram";
-import Doc from '../assets/grl.png'
+import Doc from '../assets/5C1A6776.jpg'
 import WhyWeAreDifferent from "./WhyWeAreDifferent";
-  import AOS from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
@@ -17,7 +17,7 @@ export default function HeroSection() {
 useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true, 
+      once: true,
     });
   }, []);
 
@@ -26,7 +26,7 @@ useEffect(() => {
       <Header />
 
       <section
-        className="relative w-full bg-rekora-dark-blue py-8 md:py-16 px-8 md:px-6 lg:px-6 overflow-hidden"
+        className="relative w-full bg-rekora-dark-blue py-8 md:py-16 px-8 md:px-6 lg:px-6 overflow-hidden -mb-24" // Adjust -mb-24 as needed
         data-aos="fade-left"
         data-aos-duration="1000"
       >
@@ -115,7 +115,7 @@ useEffect(() => {
                   <span className="text-2xl font-bold text-white">15+</span>
                 </div>
                 <span className="text-white/70 text-sm">
-                 Neuroscience Kids
+                  Neuroscience Kids
                 </span>
               </div>
 
@@ -138,28 +138,28 @@ useEffect(() => {
                       <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
                     </svg>
                   </div>
-                  <span className="text-2xl font-bold text-white">20+</span>
+                  <span className="text-2xl font-bold text-white">100+</span>
                 </div>
                 <span className="text-white/70 text-sm font-body">
-                  Free Science Courses
+                  Free Science Resources
                 </span>
               </div>
             </div>
           </div>
 
           <div className="relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-            <div className="relative h-[250px] md:h-[400px] lg:h-[500px] w-full">
+            <div className="relative h-[500px] w-full max-w-[600px] mx-auto overflow-hidden">
               <img
                 src={Doc}
                 alt="Happy children with school supplies"
-                className="object-contain rounded-2xl"
+                className="object-cover w-full h-full rounded-2xl"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <StemProgram />
+     
     </div>
   );
 }

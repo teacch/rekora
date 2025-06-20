@@ -40,13 +40,12 @@ const Header = () => {
     });
   };
 
-  // New function to handle scrolling to an element by ID
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-    setMobileMenuOpen(false); // Close mobile menu after clicking
+    setMobileMenuOpen(false); 
   };
 
   return (
@@ -78,14 +77,15 @@ const Header = () => {
                   About Us{" "}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
                 </Link>
-                <button
-                  onClick={() => scrollToSection("programs")}
+
+               
+ <Link
+                  to="/programs"
                   className="text-white hover:text-brand-pink transition-colors relative group"
                 >
                   Programs{" "}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
-                </button>
-
+                </Link>
                 <Link to="/resources" className="text-white hover:text-brand-pink transition-colors relative group">
                   Resources
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-pink transition-all group-hover:w-full"></span>
@@ -152,12 +152,13 @@ const Header = () => {
                     >
                       About Us
                     </Link>
-                    <button
-                      onClick={() => scrollToSection("programs")}
-                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20 text-left w-full"
+                     <Link
+                      to="/programs"
+                      className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
+                      onClick={toggleMobileMenu}
                     >
                       Programs
-                    </button>
+                    </Link>
                     <Link
                       to="/resources"
                       className="text-white hover:text-brand-pink transition-colors py-3 border-b border-white/20"
