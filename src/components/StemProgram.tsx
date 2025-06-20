@@ -54,7 +54,7 @@ const StemProgram = () => {
   };
 
   return (
-    <section className="relative z-20 mx-auto -mt-6 max-w-[90%] rounded-3xl bg-rekora-light-blue px-4 py-12 sm:px-6 sm:py-16 md:px-8 lg:px-16">
+    <section id="programs" className="relative z-20 mx-auto -mt-6 max-w-[90%] rounded-3xl bg-rekora-light-blue px-4 py-12 sm:px-6 sm:py-16 md:px-8 lg:px-16">
       <div className="mb-8 flex flex-col items-start md:mb-12 md:flex-row md:items-center">
         <div className="md:w-1/2">
           <h2
@@ -74,8 +74,7 @@ const StemProgram = () => {
             data-aos-delay="200"
           >
             We have a host of events at Rekora, from school outreaches to
-            bootcamps. We also partner with a hub where students can sign up and
-            use neuroscience experiments.
+            bootcamps. 
           </p>
         </div>
       </div>

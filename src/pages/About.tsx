@@ -1,6 +1,7 @@
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import AboutHero from "@/components/about/AboutHero";
+import MeetFounder from "@/components/MeetFounder";
 
 const About = () => {
   return (
@@ -13,6 +14,8 @@ const About = () => {
             <AboutHero />
         
           </div>
+
+          <MeetFounder/>
         
         </main>
       </div>
