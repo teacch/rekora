@@ -46,7 +46,7 @@ export default function MeetFounder() {
               in my first neuroscience class Brains in Motion taught by
               Professor Manuel Diaz-Rios. It was in that class that I first
               encountered affordable neuroscience kits designed by a company
-              called **Backyard Brains**. These kits were created to make
+              called Backyard Brains. These kits were created to make
               neuroscience education accessible to high school students, and
               Professor Diaz-Rios used them in outreach programs across Northern
               Maine.
@@ -56,7 +56,7 @@ export default function MeetFounder() {
               I was immediately intrigued. The idea that complex neuroscience
               concepts could be taught to young students using hands-on,
               affordable tools sparked something in me. I thought of home—of
-              **Nigeria**—and of students like me who grew up with limited
+              Nigeria—and of students like me who grew up with limited
               access to practical STEM learning. What if these kits could travel
               to Lagos? What if students back home had the same chance to see,
               touch, and understand the brain in action?
@@ -73,9 +73,9 @@ export default function MeetFounder() {
             </p>
 
             <p className="text-black text-lg mb-4 leading-relaxed">
-              In the fall of my senior year, I applied for the **Davis Projects
-              for Peace** national grant through Middlebury College. My proposal
-              to launch **Rekora**—a neuroscience access and exposure initiative
+              In the fall of my senior year, I applied for the Davis Projects
+              for Peace national grant through Middlebury College. My proposal
+              to launch Rekora, a neuroscience access and exposure initiative
               in Nigeria—was selected for the $10,000 award. With this support,
               I’m bringing Rekora to life in the summer of 2025.
             </p>
@@ -123,24 +123,33 @@ export default function MeetFounder() {
             </ul>
           </div>
 
-          <Button className="mt-10 bg-rekora-dark-blue text-white rounded-full px-8 py-7 flex items-center gap-3 text-xl hover:bg-rekora-dark-blue/90 transition-colors duration-300 shadow-lg">
-            Connect With Ruth
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-arrow-right"
-            >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </Button>
+          <Button
+  className="mt-10 bg-rekora-dark-blue text-white rounded-full px-8 py-7 flex items-center gap-3 text-xl hover:bg-rekora-dark-blue/90 transition-colors duration-300 shadow-lg"
+  asChild
+>
+  <a
+    href="https://www.instagram.com/ruth_olujobi/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Connect With Ruth
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-arrow-right"
+    >
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </svg>
+  </a>
+</Button>
         </div>
       </section>
     </div>

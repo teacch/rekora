@@ -20,14 +20,20 @@ import { Doodles } from "@/components/Doodles";
 import GallerySection from "@/components/GallerySection";
 import TrustedSection from "@/components/TrustedSection";
 import { Instagram } from "@/components/Instagram";
+import JoinUs from "@/components/JoinUs";
+
 
 const Index = () => (
   <div className="min-h-screen flex flex-col bg-rekora-dark-blue animate-fade-in">
     <HeroSection />
- <ImageGallery />    
- <Library />
+    <Instagram />
+         <JoinUs/>
+
     <Doodles />
-    <HowItWorks />
+  
+
+     <Library />
+
     <TrustedSection/>
     <Footer />
   </div>

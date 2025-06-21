@@ -25,9 +25,6 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-24">
-          <Copyright />
-        </div>
       </div>
     </footer>
   );

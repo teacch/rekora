@@ -3,12 +3,20 @@ import About2 from "../../assets/yo.jpg";
 import About3 from "../../assets/yo2.jpg";
 import About4 from "../../assets/yo3.jpg";
 import About5 from "../../assets/yo4.jpg";
+import { Link } from 'react-router-dom'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AboutHero() {
+  useEffect(() => {
+    AOS.init({ once: true, duration: 900 });
+  }, []);
+
   return (
     <div className="bg-rekora-dark-blue py-16 md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-24">
+        <div className="text-center mb-24" data-aos="fade-down">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight font-heading relative inline-block">
             About Rekora
             <span className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-24 h-2 bg-rekora-light-blue rounded-full"></span>
@@ -20,7 +28,7 @@ export default function AboutHero() {
         </div>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-24 items-center">
-          <div className="mb-12 md:mb-0 order-2 md:order-1">
+          <div className="mb-12 md:mb-0 order-2 md:order-1" data-aos="fade-right">
             <h3 className="text-3xl font-bold text-white mb-6 font-heading">
               Our <span className="text-rekora-light-blue">Why</span>
             </h3>
@@ -36,7 +44,7 @@ export default function AboutHero() {
               by the transformative power of access.
             </p>
           </div>
-          <div className="relative order-1 md:order-2 mb-8 md:mb-0 transform rotate-3 hover:rotate-0 transition-transform duration-500 ease-in-out">
+          <div className="relative order-1 md:order-2 mb-8 md:mb-0 transform rotate-3 hover:rotate-0 transition-transform duration-500 ease-in-out" data-aos="fade-left">
             <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl border-4 border-rekora-light-blue">
               <img
                 className="object-cover w-full h-full transform hover:scale-110 transition duration-500 ease-in-out"
@@ -49,7 +57,11 @@ export default function AboutHero() {
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          <div className="bg-rekora-darker-blue p-8 rounded-xl shadow-lg border border-rekora-light-blue transform hover:-translate-y-2 transition duration-300 ease-in-out">
+          <div
+            className="bg-rekora-darker-blue p-8 rounded-xl shadow-lg border border-rekora-light-blue transform hover:-translate-y-2 transition duration-300 ease-in-out"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h3 className="text-2xl font-bold text-rekora-light-blue mb-4 font-heading flex items-center">
               <svg
                 className="w-7 h-7 mr-3 text-rekora-light-blue"
@@ -72,7 +84,11 @@ export default function AboutHero() {
             </p>
           </div>
 
-          <div className="bg-rekora-darker-blue p-8 rounded-xl shadow-lg border border-rekora-light-blue transform hover:-translate-y-2 transition duration-300 ease-in-out">
+          <div
+            className="bg-rekora-darker-blue p-8 rounded-xl shadow-lg border border-rekora-light-blue transform hover:-translate-y-2 transition duration-300 ease-in-out"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             <h3 className="text-2xl font-bold text-rekora-light-blue mb-4 font-heading flex items-center">
               <svg
                 className="w-7 h-7 mr-3 text-rekora-light-blue"
@@ -97,11 +113,15 @@ export default function AboutHero() {
         </div>
 
         <div className="mt-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-12 font-heading">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-12 font-heading" data-aos="fade-down">
             Our Team in Action
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer">
+            <div
+              className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <img
                 src={About2}
                 alt="Students actively participating in a hands-on neuroscience workshop."
@@ -109,7 +129,11 @@ export default function AboutHero() {
               />
               <div className="absolute inset-0 bg-gray-900 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
-            <div className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer">
+            <div
+              className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
               <img
                 src={About3}
                 alt="A mentor guiding a student during a science activity."
@@ -117,7 +141,11 @@ export default function AboutHero() {
               />
               <div className="absolute inset-0 bg-gray-900 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
-            <div className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer">
+            <div
+              className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
               <img
                 src={About4}
                 alt="Young students excitedly looking at brain models."
@@ -125,7 +153,11 @@ export default function AboutHero() {
               />
               <div className="absolute inset-0 bg-gray-900 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
-            <div className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer">
+            <div
+              className="group aspect-square rounded-xl overflow-hidden shadow-xl border-2 border-transparent hover:border-rekora-light-blue transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
               <img
                 src={About5}
                 alt="A group photo outdoors with Rekora participants."
@@ -136,13 +168,13 @@ export default function AboutHero() {
           </div>
         </div>
 
-        <div className="mt-20 text-center">
+        <div className="mt-20 text-center" data-aos="fade-up">
           <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
             Ready to empower the next generation of African innovators?
           </p>
-          <a
-            href="#"
-            className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full shadow-lg text-blck bg-rekora-light-blue hover:bg-rekora-darker-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rekora-light-blue transform hover:-translate-y-1 transition duration-300 ease-in-out"
+          <Link
+            to="/donate"
+            className="inline-flex text-rekora-dark-blue items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full shadow-lg text-blck bg-rekora-light-blue hover:bg-rekora-darker-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rekora-light-blue transform hover:-translate-y-1 transition duration-300 ease-in-out"
           >
             Get Involved
             <svg
@@ -157,7 +189,7 @@ export default function AboutHero() {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
