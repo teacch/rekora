@@ -8,6 +8,7 @@ import StemProgram from "./StemProgram"; // Not used here but imported
 import ImageGallery from "./ImageGallery";
 import Brain from "../assets/brain.png";
 import { Instagram } from "./Instagram";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 const contentItems = [
   {
@@ -52,29 +53,29 @@ const tagColorMap = {
 
 const Library = () => {
   useEffect(() => {
-    AOS.init({ duration: 800, once: true }); // initialize AOS with some options
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   return (
     <>
-      <section className="relative w-full bg-rekora-dark-blue py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
+      <section className="relative w-full bg-rekora-light-blue py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
         <PlayschoolDoodles />
 
         <div className="max-w-7xl mx-auto relative z-10">
           <h2
-            className="mb-6 text-4xl font-bold text-white sm:text-5xl font-heading"
+            className="mb-6 text-4xl font-bold text-rekora-dark-blue sm:text-5xl font-heading"
             data-aos="fade-up"
           >
             Learn Beyond The Classroom
           </h2>
           <div
-            className="mb-6 h-1 w-16 bg-rekora-light-blue"
+            className="mb-6 h-1 w-16 bg-rekora-dark-blue"
             data-aos="fade-up"
             data-aos-delay="100"
           ></div>
 
           <p
-            className="mb-8 text-lg text-white"
+            className="mb-8 text-lg text-rekora-dark-blue"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -139,26 +140,48 @@ const Library = () => {
               );
             })}
           </div>
-
-          <div className="flex justify-center mt-8">
-            <div className="flex gap-2">
-              {[1, 2, 3].map((dot) => (
-                <button
-                  key={dot}
-                  className={`h-2 rounded-full ${
-                    dot === 1 ? "w-6 bg-yellow-400" : "w-2 bg-white/50"
-                  }`}
-                  aria-label={`Go to slide ${dot}`}
-                ></button>
-              ))}
-            </div>
+          <div className="text-center md:mt-16">
+            <Link
+              to="/resources"
+              className="
+                              inline-flex items-center font-body
+                              px-8 py-4
+                              text-base font-bold text-white
+                              bg-rekora-dark-blue rounded-full border-zinc-500
+                              shadow-lg hover:shadow-xl
+                              transform hover:-translate-y-1
+                              transition-all duration-300 ease-in-out
+                              focus:outline-none focus:ring-4 focus:ring-zinc-500 focus:ring-opacity-75
+                              hover:bg-zinc-900 transition-colors
+                              group
+                            "
+            >
+              Start Learning Now
+              <span
+                className="
+                                bg-white text-black rounded-full p-2 ml-2
+                                transition-transform duration-200 group-hover:rotate-45
+                              "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </span>
+            </Link>
           </div>
         </div>
       </section>
-
-      <div className="bg-rekora-light-blue">
-       <Instagram/>
-      </div>
     </>
   );
 };

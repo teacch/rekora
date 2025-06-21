@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import React, { useState, useEffect } from "react";
 import Logo from "../assets/rekora-logo-light.png";
-import { Menu, X, ArrowUp, Search, User } from "lucide-react";
+import { Menu, X, ArrowUp, Heart, User } from "lucide-react";
 import { Link } from "react-router-dom"; // Keep react-router-dom for other links
 
 const Header = () => {
@@ -103,15 +103,16 @@ const Header = () => {
               <div className="flex items-center gap-4">
                 <div className="hidden md:flex items-center gap-2">
                   <Link
-                    to="/search"
-                    className="text-white hover:text-brand-pink transition-colors p-2 rounded-full hover:bg-brand-pink/5"
-                  >
-                    <Search className="h-5 w-5" />
-                  </Link>
+    to="/donate"
+    className="text-white hover:text-brand-pink transition-colors p-2 rounded-full hover:bg-brand-pink/5"
+    title="Donate"
+  >
+    <Heart className="h-5 w-5" />
+  </Link>
                 </div>
 
                 <Button className="bg-white text-black shadow-md hover:shadow-lg hover:bg-brand-pink/90 hover:scale-105 transition-all rounded-xl">
-                  <a href="#register">Get Involved</a>
+                  <a href="/contact">Contact Us</a>
                 </Button>
 
                 <button
@@ -178,7 +179,7 @@ const Header = () => {
                       className="bg-brand-pink text-white w-full mt-4 rounded-xl"
                       onClick={toggleMobileMenu}
                     >
-                      <a href="#register">Get Involved</a>
+                      <a href="/contact">Contact Us</a>
                     </Button>
                   </nav>
                 </motion.div>

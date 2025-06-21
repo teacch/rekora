@@ -11,13 +11,16 @@ export default function TrustedSection() {
         <div className="container relative z-10 mx-auto px-4">
           <div className="flex flex-col items-start justify-between gap-12 lg:flex-row">
             <div className="max-w-xl">
-              <h2 className="mb-4 text-4xl font-bold text-white md:text-5xl font-heading">
-                Testimonials
+              <h2 className="mb-4 text-3xl font-bold text-white md:text-5xl font-heading">
+             Our Participants Say
+
               </h2>
               <div className="mb-6 h-1 w-16 bg-rekora-light-blue"></div>
 
               <p className="mb-10 text-lg text-white font-body">
-                Over 5,000 students trained with a 96% satisfaction rate.
+                Hear directly from the students and teachers who have experienced Rekora's impact.
+
+
               </p>
 
               <div className="flex flex-col gap-6 sm:flex-row">
@@ -46,20 +49,20 @@ export default function TrustedSection() {
 
             <div className="flex w-full flex-row gap-12 lg:w-auto">
               <div className="flex flex-col items-center">
-                <h3 className="text-6xl font-bold text-rekora-light-blue md:text-7xl font-heading">
-                  5k+
+                <h3 className="text-4xl font-bold text-rekora-light-blue md:text-7xl font-heading">
+                 360+
                 </h3>
                 <p className="text-lg font-medium text-white font-body">
-                  Students Trained
+                  Students Reached
                 </p>
               </div>
 
               <div className="flex flex-col items-center font-heading">
-                <h3 className="text-6xl font-bold text-rekora-light-blue md:text-7xl font-heading">
-                  96%
+                <h3 className="text-4xl font-bold text-rekora-light-blue md:text-7xl font-heading">
+                 100+
                 </h3>
                 <p className="text-lg font-medium text-white font-body">
-                  Satisfaction Rate
+                  Free Science Resources
                 </p>
               </div>
             </div>
