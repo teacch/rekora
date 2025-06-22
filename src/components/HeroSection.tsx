@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { EdukidsDoodles } from "./EdukidsDoodles";
 import Header from "./Header";
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 import Doc from "../assets/herp.jpg";
 import AOS from "aos";
@@ -10,6 +12,8 @@ import "aos/dist/aos.css";
 import { Instagram } from "./Instagram";
 
 export default function HeroSection() {
+    const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -54,47 +58,56 @@ export default function HeroSection() {
               data-aos-duration="1000"
               data-aos-delay="400"
             >
-              <Button className="bg-yellow-400 hover:bg-yellow-500 text-teal-800 font-medium rounded-full px-8 py-6 text-base font-body">
-                Get Started Now
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-arrow-right ml-2 h-5 w-5"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </Button>
               <Button
-                variant="outline"
-                className="border-white bg-inherit text-white hover:bg-white/10 font-medium rounded-full px-8 py-6 text-base font-body"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-users-mr-2 h-5 w-5"
-                >
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="8.5" cy="7" r="4" />
-                  <path d="M20 8v6" />
-                  <path d="M23 11h-6" />
-                </svg>
-                Partner With Us
-              </Button>
+        className="bg-yellow-400 hover:bg-yellow-500 text-teal-800 font-medium rounded-full px-8 py-6 text-base font-body"
+        onClick={() => navigate("/programs")}
+      >
+        Get Started Now
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-arrow-right ml-2 h-5 w-5"
+        >
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </Button>
+              <Button
+  variant="outline"
+  className="border-white bg-inherit text-white hover:bg-white/10 font-medium rounded-full px-8 py-6 text-base font-body"
+  onClick={() => {
+    const el = document.getElementById("join-us");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-users-mr-2 h-5 w-5"
+  >
+    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+    <circle cx="8.5" cy="7" r="4" />
+    <path d="M20 8v6" />
+    <path d="M23 11h-6" />
+  </svg>
+  Partner With Us
+</Button>
             </div>
 
             <div

@@ -35,7 +35,7 @@ const donationMethods: DonationMethod[] = [
     bankDetails: {
       accountNumber: "0491316452",
       bankName: "Sterling Bank",
-      accountName: "Ruth Oluwadamilola",
+      accountName: "Ruth Oluwadamilola Olujobi",
     },
     type: "bank",
     iconType: "lucide",
