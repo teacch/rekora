@@ -30,23 +30,23 @@ export default function ContactInfoSection() {
                   </svg>
                   Location:
                 </h3>
-                <address className="text-gray-700 leading-relaxed not-italic text-base sm:text-lg">
+                <address className="text-gray-700 leading-relaxed not-italic text-base sm:text-lg font-heading">
                   11 Ademola Saka Close,
                   <br />
                   Lagos, Nigeria
                 </address>
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 font-heading flex items-center">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 font-heading flex items-center font-heading">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-rekora-dark-blue mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   Hours:
                 </h3>
-                <p className="text-gray-700 text-base sm:text-lg">
+                <p className="text-gray-700 text-base sm:text-lg font-heading">
                   <span className="font-semibold">Mon - Fri:</span> 10 AM - 3 PM
                 </p>
-                <p className="text-gray-600 text-sm italic mt-1">
+                <p className="text-gray-600 text-sm italic mt-1 font-heading">
                   (Weekends by appointment only)
                 </p>
               </div>
