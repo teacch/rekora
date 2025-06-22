@@ -10,7 +10,7 @@ export default function ContactDetails() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-br from-rekora-light-blue to-rekora-dark-blue px-4 py-16 sm:px-6 md:px-8 lg:px-16 xl:px-20">
+    <section className="bg-gradient-to-br from-rekora-light-blue to-rekora-dark-blue px-4 py-16 sm:px-6 md:px-8 lg:px-16 xl:px-20 font-heading">
       <div className="max-w-7xl mx-auto rounded-xl shadow-2xl overflow-hidden bg-white">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           <div
