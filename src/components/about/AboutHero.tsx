@@ -17,9 +17,8 @@ export default function AboutHero() {
     <div className="bg-rekora-dark-blue py-16 md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-24" data-aos="fade-down">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight font-heading relative inline-block">
-            About Rekora
-            <span className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-24 h-2 bg-rekora-light-blue rounded-full"></span>
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight font-heading relative inline-block">
+Fostering Interest in STEM Careers Through Access and Exposure            <span className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-24 h-2 bg-rekora-light-blue rounded-full"></span>
           </h2>
           <p className="mt-6 text-xl text-gray-100 max-w-3xl mx-auto">
             Igniting curiosity and fostering innovation in neuroscience across

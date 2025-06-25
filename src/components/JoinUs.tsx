@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { NavLink } from "react-router-dom"; // Import NavLink from react-router-dom
+import { NavLink } from "react-router-dom";
 
 const changeOptions = [
   {
@@ -16,12 +16,12 @@ const changeOptions = [
       "Give a child the gift of education and opportunity. Your support provides access to learning, mentorship, and a brighter future.",
     icon: UserPlus,
     buttonText: "Get in Touch",
-    link: "https://www.instagram.com/rekorainitiative/",
+    link: "/donate",
   },
   {
     title: "Donate to Us",
     description:
-      "Support us in buying neuroscience kits and expanding to more schools. Each donation supports (e.g., $25 = 1 student kit)",
+      "Support us in buying neuroscience kits and expanding to more schools. Each donation supports us in reaching our mission.",
     icon: Banknote,
     buttonText: "Donate Now",
     link: "/donate",
@@ -32,7 +32,7 @@ const changeOptions = [
       "Apply to become a volunteer for our school outreaches, workshop facilitator, mentor, or content creator. ",
     icon: Handshake,
     buttonText: "Take Action",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSc8QlKpNg58cf6AKiI7BS1TCwaLViaxU507jiu1cC_mE5d99g/closedform",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfVi5TbFbmrkYW7UWKX3Odo3BWSdW4u-Zu8LfzCzucDzQoCPw/viewform",
   },
   {
     title: "Partner With Us",
@@ -40,7 +40,7 @@ const changeOptions = [
       "Partner with us to create sustainable change. Together, we can amplify our impact and empower more children to reach their full potential.",
     icon: Building,
     buttonText: "Get In Touch",
-    link: "https://wa.me/+12074495779?text=Hello%20Rekora%2C%20I%20would%20like%20to%20partner%20with%20you.",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScGm_DBZBju24sEgyKKrp_69nsjrRehobVGaLKSmY0NBSLMNQ/viewform?usp=dialog",
   },
 ];
 

@@ -1,3 +1,7 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Img1 from "../../../assets/5C1A6776.jpg";
 import Img2 from "../../../assets/MW2A5964.jpg";
 import Img3 from "../../../assets/MW2A6196.jpg";
@@ -87,6 +91,47 @@ export default function PastEventsGrid() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+      easing: "ease-out",
+      offset: 150,
+    });
+
+    const images = document.querySelectorAll(".event-image-container img");
+    let imagesLoadedCount = 0;
+    const totalImages = images.length;
+
+    if (totalImages === 0) {
+      AOS.refresh();
+      return;
+    }
+
+    const imageLoadHandler = () => {
+      imagesLoadedCount++;
+      if (imagesLoadedCount === totalImages) {
+        AOS.refresh();
+      }
+    };
+
+    images.forEach((img) => {
+      if (img.complete) {
+        imageLoadHandler();
+      } else {
+        img.addEventListener("load", imageLoadHandler);
+        img.addEventListener("error", imageLoadHandler);
+      }
+    });
+
+    return () => {
+      images.forEach((img) => {
+        img.removeEventListener("load", imageLoadHandler);
+        img.removeEventListener("error", imageLoadHandler);
+      });
+    };
+  }, []);
+
   return (
     <div className="max-w-7xl mx-auto px-4 mb-16">
       <style jsx>{`
@@ -125,93 +170,23 @@ export default function PastEventsGrid() {
       `}</style>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform rotate-1 event-image-container">
-          <img
-            src={Img1}
-            alt="Women at craft workshop with colorful cards"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform -rotate-1 event-image-container">
-          <img
-            src={Img2}
-            alt="Two women chatting and smiling"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform rotate-2 event-image-container">
-          <img
-            src={Img3}
-            alt="Woman smiling with drink"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform -rotate-1 event-image-container">
-          <img
-            src={Img4}
-            alt="Group flower arranging workshop"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform rotate-1 event-image-container">
-          <img
-            src={Img5}
-            alt="Group photo outdoors with Christmas tree"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform -rotate-2 event-image-container">
-          <img
-            src={Img6}
-            alt="Woman with cocktail at bar"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform rotate-1 event-image-container">
-          <img
-            src={Img7}
-            alt="Group photo at Psycle event"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform -rotate-1 event-image-container">
-          <img
-            src={Img8}
-            alt="Women at bookstore event"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform rotate-2 event-image-container">
-          <img
-            src={Img9}
-            alt="Woman arranging flowers"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform -rotate-1 event-image-container">
-          <img
-            src={Img10}
-            alt="Woman crafting at workshop"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform rotate-1 event-image-container">
-          <img
-            src={Img11}
-            alt="Women at game night"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div className="relative p-1 bg-white rounded-lg shadow-md transform -rotate-2 event-image-container">
-          <img
-            src={Img12}
-            alt="Group of women at social event"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
+        {eventImages.map((image, index) => (
+          <div
+            key={image.id}
+            className={`relative p-1 bg-white rounded-lg shadow-md ${image.className} event-image-container`}
+            data-aos="fade-down"
+            data-aos-delay={`${index * 120}`}
+            data-aos-duration="1400"
+            data-aos-easing="ease-out"
+            data-aos-offset="100"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

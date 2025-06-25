@@ -25,8 +25,8 @@ export default function TrustedSection() {
 
               <div className="flex flex-col gap-6 sm:flex-row">
                 <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center rounded-full border-2 border-white px-8 py-3 text-lg font-body text-white transition-colors hover:bg-white/10"
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-full border-2 bg-white px-8 py-3 text-lg font-body text-rekora-dark-blue transition-colors hover:bg-white/10"
                 >
                   CONTACT US
                 </a>
@@ -40,7 +40,7 @@ export default function TrustedSection() {
                       CALL OR WHATSAPP US VIA
                     </p>
                     <p className="text-lg font-bold text-white">
-                      +2349090123584000
+                      +2347089615017
                     </p>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ export default function TrustedSection() {
 
             <div className="flex w-full flex-row gap-12 lg:w-auto">
               <div className="flex flex-col items-center">
-                <h3 className="text-4xl font-bold text-rekora-light-blue md:text-7xl font-heading">
+                <h3 className="text-3xl font-bold text-rekora-light-blue md:text-7xl font-heading">
                  360+
                 </h3>
                 <p className="text-lg font-medium text-white font-body">
@@ -58,7 +58,7 @@ export default function TrustedSection() {
               </div>
 
               <div className="flex flex-col items-center font-heading">
-                <h3 className="text-4xl font-bold text-rekora-light-blue md:text-7xl font-heading">
+                <h3 className="text-3xl font-bold text-rekora-light-blue md:text-7xl font-heading">
                  100+
                 </h3>
                 <p className="text-lg font-medium text-white font-body">

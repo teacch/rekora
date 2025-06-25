@@ -40,7 +40,7 @@ export default function ContactDetails() {
                   </p>
                   <span className="text-lg sm:text-xl font-medium text-gray-800 group-hover:text-teal-600 transition-colors truncate">
                     {" "}
-                    +234 802 564 4212
+                    +2347089615017
                   </span>
                 </div>
               </a>
@@ -59,7 +59,7 @@ export default function ContactDetails() {
                     WhatsApp
                   </p>
                   <span className="text-lg sm:text-xl font-medium text-gray-800 group-hover:text-teal-600 transition-colors truncate">
-                    +234 818 265 7665
+                    +2348117852082
                   </span>
                 </div>
               </a>

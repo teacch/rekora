@@ -22,19 +22,17 @@ import TrustedSection from "@/components/TrustedSection";
 import { Instagram } from "@/components/Instagram";
 import JoinUs from "@/components/JoinUs";
 
-
 const Index = () => (
   <div className="min-h-screen flex flex-col bg-rekora-dark-blue animate-fade-in">
     <HeroSection />
     <Instagram />
-         <JoinUs/>
+    <JoinUs />
 
     <Doodles />
-  
 
-     <Library />
+    <Library />
 
-    <TrustedSection/>
+    <TrustedSection />
     <Footer />
   </div>
 );

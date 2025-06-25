@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function CallToAction() {
   return (
@@ -10,7 +11,7 @@ export default function CallToAction() {
         Want to join the fun?
       </h2>
       <Button className="bg-white text-gray-900 border-2 border-gray-900 hover:bg-gray-900 hover:text-white px-8 py-3 font-medium rounded-md">
-        GET INVOLVED
+        <Link to="/contact">GET INVOLVED</Link>
       </Button>
     </div>
   );
