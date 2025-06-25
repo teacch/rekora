@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 import { Link } from "react-router-dom";
-
 import Video1 from "../../public/founder_video.mp4";
 import Video2 from "../../public/Day 1.mp4";
 import Video3 from "../../public/Day 4.mp4";
@@ -107,7 +106,8 @@ export const Instagram = () => {
           ))}
         </div>
 
-        <div className="text-center md:mt-16">
+        {/* Adjustments start here */}
+        <div className="text-center mt-8 md:mt-16"> {/* Changed mt-x to mt-8 */}
           <Link
             to="/programs"
             className="
@@ -127,6 +127,7 @@ export const Instagram = () => {
             <span
               className="
                 bg-white text-black rounded-full p-2 ml-2
+                flex items-center justify-center // Added flexbox for centering
                 transition-transform duration-200 group-hover:rotate-45
               "
             >

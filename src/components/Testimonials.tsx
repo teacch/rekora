@@ -16,7 +16,7 @@ const Testimonials = () => {
       title: "Student",
       quote:
         "I learnt a few things about Neuroscience. I learnt about how the brain connects to our body and gives us instructions on what to do and also how science helps to advance that.",
-      rating: 4,
+      rating: 5,
     },
     {
       id: 3,
@@ -65,7 +65,7 @@ const Testimonials = () => {
                       key={star}
                       className={`w-5 h-5 ${
                         star <= testimonial.rating
-                          ? "text-white"
+                          ? "text-yellow-400"
                           : "text-rekora-dark-blue"
                       }`}
                       fill="currentColor"
