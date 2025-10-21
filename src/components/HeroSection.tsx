@@ -136,7 +136,7 @@ export default function HeroSection() {
                       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                     </svg>
                   </div>
-                  <span className="text-2xl font-bold text-white">360+</span>
+                  <span className="text-2xl font-bold text-white">650+</span>
                 </div>
                 <span className="text-white/70 text-sm">Students Reached</span>
               </div>

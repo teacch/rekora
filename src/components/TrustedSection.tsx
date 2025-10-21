@@ -50,7 +50,7 @@ export default function TrustedSection() {
             <div className="flex w-full flex-row gap-12 lg:w-auto">
               <div className="flex flex-col items-center">
                 <h3 className="text-3xl font-bold text-rekora-light-blue md:text-7xl font-heading">
-                 360+
+                 650+
                 </h3>
                 <p className="text-lg font-medium text-white font-body">
                   Students Reached
