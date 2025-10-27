@@ -183,13 +183,13 @@ export default function PastEventsGrid() {
         AOS.refresh();
       }
     };
-
     images.forEach((img) => {
-      if (img.complete) {
+      const imageElement = img as HTMLImageElement;
+      if (imageElement.complete) {
         imageLoadHandler();
       } else {
-        img.addEventListener("load", imageLoadHandler);
-        img.addEventListener("error", imageLoadHandler);
+        imageElement.addEventListener("load", imageLoadHandler);
+        imageElement.addEventListener("error", imageLoadHandler);
       }
     });
 
@@ -203,7 +203,7 @@ export default function PastEventsGrid() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 mb-16">
-      <style jsx>{`
+      <style>{`
         @keyframes imageHoverEffect {
           0% {
             transform: scale(1) rotate(0deg);
