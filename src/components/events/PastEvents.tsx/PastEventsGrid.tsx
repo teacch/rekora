@@ -19,6 +19,7 @@ export default function PastEventsGrid() {
   const eventCategories = [
     {
       category: "Inaugural School Outreaches",
+      Date: "May 2025",
       images: [
         {
           id: 1,
@@ -39,28 +40,10 @@ export default function PastEventsGrid() {
           className: "col-span-1 row-span-1 transform rotate-2",
         },
         {
-          id: 4,
-          src: Img4,
-          alt: "Group flower arranging workshop",
-          className: "col-span-1 row-span-1 transform -rotate-1",
-        },
-        {
-          id: 5,
-          src: Img5,
-          alt: "Group photo outdoors with Christmas tree",
-          className: "col-span-1 row-span-1 transform rotate-1",
-        },
-        {
           id: 6,
           src: Img6,
           alt: "Woman with cocktail at bar",
           className: "col-span-1 row-span-1 transform -rotate-2",
-        },
-        {
-          id: 7,
-          src: Img7,
-          alt: "Group photo at Psycle event",
-          className: "col-span-1 row-span-1 transform rotate-1",
         },
         {
           id: 8,
@@ -96,22 +79,23 @@ export default function PastEventsGrid() {
     },
     {
       category: "Bootcamp",
+      Date: "May 2025",
       images: [
         {
           id: 13,
-          src: "/Sch1.jpg",
+          src: Img5,
           alt: "Bootcamp placeholder 1",
           className: "col-span-1 row-span-1 transform rotate-1",
         },
         {
           id: 14,
-          src: "/Sch2.jpg",
+          src: Img4,
           alt: "Bootcamp placeholder 2",
           className: "col-span-1 row-span-1 transform -rotate-1",
         },
         {
           id: 15,
-          src: "/Sch3.jpg",
+          src: Img7,
           alt: "Bootcamp placeholder 3",
           className: "col-span-1 row-span-1 transform rotate-2",
         },
@@ -119,6 +103,7 @@ export default function PastEventsGrid() {
     },
     {
       category: "August School Activations",
+      Date: "August 2025",
       images: [
         {
           id: 17,
