@@ -8,6 +8,11 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8043,
   },
+  preview: {
+    host: "::",
+    port: 8043,
+    allowedHosts: ["www.rekora.org", "rekora.org"],
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
